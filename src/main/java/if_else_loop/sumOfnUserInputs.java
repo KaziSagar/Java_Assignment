@@ -1,4 +1,4 @@
-// 1. Write a program to sum of user input until users input ‘q’ from keyboard
+// 9. Write a program to sum of user input until users input ‘q’ from keyboard
 
 package if_else_loop;
 
