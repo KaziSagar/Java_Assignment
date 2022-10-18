@@ -1,3 +1,7 @@
+// 6. Replace "R" from Rahim with "F" from the given String:
+//Input: Ratul and Rahim lives in Rangpur
+//Output: Ratul and Fahim lives in Rangpur
+
 package stringManipulation;
 
 public class replaceChar {

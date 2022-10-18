@@ -2,28 +2,25 @@
 
 package if_else_loop;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class largestAndSmallest {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        int max = 0, min = 0, n;
-        char ch;
+        System.out.println("\nHow many values do you wanna insert?");
+        int n = input.nextInt();
 
-        do{
-            System.out.print("Enter a number: ");
-            n = input.nextInt();
+        int[] arr = new int[n];
 
-            if(n>max)
-                max = n;
-            if(n<min)
-                min = n;
+        for(int i=0; i<n; i++){
+            System.out.println("Insert Value (" + i +"): ");
+            arr[i] = input.nextInt();
+        }
 
-            System.out.print("Press 'any key' to continue OR Press 'q' to quit: ");
-            ch = input.next().charAt(0);
+        Arrays.sort(arr);
 
-        }while(ch != 'q');
-        System.out.print("\nMax = " + max + " and Min = " + min);
+        System.out.println("Max = " + arr[n-1] + " and Min = " + arr[0]);
     }
 }
